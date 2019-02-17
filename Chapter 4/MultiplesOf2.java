@@ -10,10 +10,8 @@ public class MultiplesOf2 {
 	public static void main(String[] args) {
 		int counter = 1;
 		while (true) {
-
 			System.out.print(2 * counter + " ");
 			counter *= 2;
-
 		}
 	}
 }

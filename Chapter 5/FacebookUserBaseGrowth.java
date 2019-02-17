@@ -11,25 +11,16 @@ to two billion users?
 
 public class FacebookUserBaseGrowth {
 	public static void main(String[] args) {
-
 		double rate = 0.04;
-		double principal = 1000000000; // initial amount before growth rate
-		double amount = 1000000000; // //amount of users at the begining of each year
+		double principal = 1000000000;
+		double amount = 1000000000;
 		int year = 1;
 
 		while (amount <= 2000000000) {
-
 			amount = principal * Math.pow(1.0 + rate, year);
-
-			System.out.println("Year : " + year + ", Users : " + amount); // printojme rritjen vjetore
-			year++; // numeroj sasise e viteve deri ne rritjen e percaktuar ne kusht
-
+			System.out.println("Year : " + year + ", Users : " + amount);
+			year++;
 		}
-
-		System.out.printf("%nFacebook will reach 2 billion users in %d months", year * 12); // shumezojme numrin e
-																							// viteve me 12, qe jep
-																							// numrin e muajve
-
+		System.out.printf("%nFacebook will reach 2 billion users in %d months", year * 12);
 	}
-
 }

@@ -13,7 +13,6 @@ known algorithmic approach other than using sheer brute force.
 
 public class PythagoreanTriples {
 	public static void main(String[] args) {
-
 		System.out.println("Katet \t katat \t hipotenuze ");
 
 		for (int i = 1; i <= 500; i++) {
@@ -21,7 +20,6 @@ public class PythagoreanTriples {
 				for (int k = 1; k <= 500; k++) {
 					if (Math.pow(i, 2) + Math.pow(j, 2) == Math.pow(k, 2))
 						System.out.println(i + "\t" + j + "\t" + k);
-
 				}
 			}
 		}

@@ -14,9 +14,7 @@ import java.util.Scanner;
 
 public class GreatestCommonDivisor {
 	public static void main(String[] args) {
-
 		int n1, n2;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter two numbers : ");
@@ -24,21 +22,13 @@ public class GreatestCommonDivisor {
 		n2 = input.nextInt();
 
 		System.out.println("Greatest common divisor is : " + greatestCommonDivisor(n1, n2));
-
 		input.close();
 	}
 
-	/*
-	 * Bazohet ne faktin se pjestuesi me i madh i perpashket i n1, n2 eshte i njejte
-	 * me pjestuesin me te madh te perbashket te n1 dhe n1 & n2 ( nqs n1 > n2)
-	 *
-	 * 
-	 */
-	public static int greatestCommonDivisor(int n1, int n2) { // zgjidhje rekursive
-		if (n2 == 0) // kushti i ndalimit
+	public static int greatestCommonDivisor(int n1, int n2) {
+		if (n2 == 0)
 			return n1;
 
 		return greatestCommonDivisor(n2, n1 % n2);
 	}
-
 }

@@ -16,7 +16,6 @@ public class Factorials {
 		for (int i = 1; i <= 20; i++) {
 			factorial *= i;
 		}
-
 		System.out.println(factorial);
 	}
 }

@@ -12,23 +12,21 @@ import java.util.Scanner;
 
 public class Multiplies {
 	public static void main(String[] args) {
-
 		int n1, n2;
 		Scanner input = new Scanner(System.in);
-		
+
 		System.out.println("Enter two numbers:");
 		n1 = input.nextInt();
 		n2 = input.nextInt();
-		
+
 		System.out.printf("Is %s multiple", isMultiple(n1, n2) ? "" : "not");
-		
-		input.close(); // mbyll Scannerin
+
+		input.close();
 	}
 
 	public static boolean isMultiple(int a, int b) {
 		if (b % a == 0)
 			return true;
-
 		return false;
 	}
 }

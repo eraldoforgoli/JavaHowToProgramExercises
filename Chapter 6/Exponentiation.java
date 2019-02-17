@@ -15,7 +15,6 @@ import java.util.Scanner;
 
 public class Exponentiation {
 	public static void main(String[] args) {
-
 		int base, exponent;
 
 		Scanner input = new Scanner(System.in);
@@ -23,20 +22,15 @@ public class Exponentiation {
 		System.out.println("Enter the base and the exponent");
 		base = input.nextInt();
 		exponent = input.nextInt();
-
 		System.out.println(base + "^" + exponent + " = " + integerPower(base, exponent));
-
+		input.close();
 	}
 
 	public static int integerPower(int base, int exponent) {
 		int power = 1;
-		for(int i = 1; i <= exponent; i++) {
-			
+		for (int i = 1; i <= exponent; i++) {
 			power *= base;
-			
 		}
-		
 		return power;
-	
 	}
 }

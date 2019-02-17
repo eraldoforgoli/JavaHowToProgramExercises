@@ -13,9 +13,7 @@ import java.util.Scanner;
 
 public class BarChartPrintingProgram {
 	public static void main(String[] args) {
-
 		int number1, number2, number3, number4, number5;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter 5 numbers ");
@@ -49,7 +47,5 @@ public class BarChartPrintingProgram {
 			System.out.print("*");
 
 		System.out.println();
-
 	}
-
 }

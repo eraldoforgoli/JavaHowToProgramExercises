@@ -21,8 +21,7 @@ import java.util.Scanner;
 
 public class SalesCommissionCalculator {
 	public static void main(String[] args) {
-
-		double[] values = { 239.99, 129.75, 99, 95, 350, 89 }; // perdor vektor per te ruajtur vlerat
+		double[] values = { 239.99, 129.75, 99, 95, 350, 89 };
 		double sales = 0.0;
 		int itemNumber;
 
@@ -30,18 +29,13 @@ public class SalesCommissionCalculator {
 
 		System.out.println("Enter the item number");
 		itemNumber = input.nextInt();
-
 		while (itemNumber != -1) {
 
-			sales += values[itemNumber - 1]; // itemNumber - 1 pasi indeksi i vektorit nis nga 0, kurse perdoruesi
-												// futinput nga 1(values[0]) deri ne madhesiaEVektorit - 1
-
+			sales += values[itemNumber - 1];
 			System.out.println("Enter -1  to finisht  or continue by entering item number : ");
 			itemNumber = input.nextInt();
-
 		}
-
 		System.out.printf("Salesperson's earnings for lost week are : %.2f", (200.0 + (double) 9 / 100 * sales));
-
+		input.close();
 	}
 }

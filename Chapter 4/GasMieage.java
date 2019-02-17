@@ -14,12 +14,10 @@ import java.util.Scanner;
 
 public class GasMieage {
 	public static void main(String[] args) {
-
 		int miles, gallons, count = 0, totalMiles = 0, totalGallons = 0, sentinel = 0;
 		Scanner in = new Scanner(System.in);
 
 		while (sentinel != -1) {
-
 			System.out.println("Enter the number of miles for trip " + (count + 1));
 			miles = in.nextInt();
 
@@ -36,10 +34,8 @@ public class GasMieage {
 
 			count++;
 		}
-
 		System.out.println("Miles/Gallon for all trips " + (count + 1) + " = " + (double) totalMiles / totalGallons);
 
 		in.close(); // mbyll Scannerin
 	}
-
 }

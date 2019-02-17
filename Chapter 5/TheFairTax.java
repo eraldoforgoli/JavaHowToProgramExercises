@@ -16,27 +16,18 @@ import java.util.Scanner;
 
 public class TheFairTax {
 	public static void main(String[] args) {
-
 		double totalExpenses = 0.0, tax;
-
-		// ruaj emrat e kategorive ne nje vektor me stringje
 		String[] categories = { "Housing", "Food", "Clothing", "Transportation", "Education", "Health Care",
 				"Vacations" };
-
 		Scanner input = new Scanner(System.in);
 
-		// llogaris shpenzimet per cdo kategori
 		for (int i = 0; i < categories.length; i++) {
 			System.out.println("Enter expenses for category : \n" + categories[i]);
 			totalExpenses += input.nextDouble();
 		}
-
-		tax = (double) 23/100 * totalExpenses;
-
+		tax = (double) 23 / 100 * totalExpenses;
 		System.out.printf("Tax is : %.2f", tax);
 
-		input.close(); // mbyll scanerin
-
+		input.close();
 	}
-
 }

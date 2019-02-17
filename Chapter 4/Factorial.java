@@ -19,9 +19,8 @@ import java.util.Scanner;
 
 public class Factorial {
 	public static void main(String[] args) {
-
 		int number, exponent;
-		double e = 1.0; // inicializoj me 1
+		double e = 1.0;
 		double power = 1.0;
 
 		Scanner input = new Scanner(System.in);
@@ -35,7 +34,6 @@ public class Factorial {
 
 		for (int i = 1; i <= number; i++) {
 			e += (double) 1.0 / factorial(i);
-
 		}
 
 		System.out.printf("Value of e by using %d terms if %.3f%n : ", number, e);
@@ -48,23 +46,16 @@ public class Factorial {
 
 		for (int i = 1; i <= number; i++) {
 			power += Math.pow(exponent, i) / factorial(i);
-
 		}
-
 		System.out.printf("e ^ %d = %f", exponent, power);
 
-		input.close(); // mbyll Scannerin
-
+		input.close();
 	}
 
-	public static int factorial(int number) { // do ta therrasim funksionin per te llogaritur faktorialin ne kerkesat b
-												// dhe c (me rekursion)
-
+	public static int factorial(int number) {
 		if (number == 1)
 			return 1;
-
 		else
 			return number * factorial(number - 1);
-
 	}
 }

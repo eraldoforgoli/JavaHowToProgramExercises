@@ -13,9 +13,7 @@ import java.util.Scanner;
 
 public class PerfectNumber {
 	public static void main(String[] args) {
-
 		int number;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter the number");
@@ -25,29 +23,23 @@ public class PerfectNumber {
 
 		if (isPerfect(number))
 			displayFactors(number);
-		
 		input.close();
 	}
 
 	public static boolean isPerfect(int number) {
-
 		int sum = 0;
-
 		for (int i = 1; i < number; i++)
 			if (number % i == 0)
 				sum += i;
 
 		if (sum == number)
 			return true;
-
 		return false;
 	}
 
 	public static void displayFactors(int number) {
-
 		for (int i = 1; i <= number; i++)
 			if (number % i == 0)
 				System.out.print(i + " ");
 	}
-
 }

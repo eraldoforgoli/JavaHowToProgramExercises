@@ -23,31 +23,24 @@ import java.util.Scanner;
 
 public class MakingADifference {
 	public static void main(String[] args) {
-
 		int number, lastDigit, temp;
 		int counter = 1;
 		int incryptedNumber, decryptedNumber;
-		int[] digits = new int[4]; // do perdor vektor per te futur secilen shifer te numrit
+		int[] digits = new int[4];
 		int[] digits1 = new int[4];
 
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter a 4 digit integer ");
 		number = input.nextInt();
-
 		while (number > 0) {
-
-			lastDigit = number % 10; // marr shifren e fundit te numrit
+			lastDigit = number % 10;
 			lastDigit = (lastDigit + 7) % 10;
-			digits[digits.length - counter] = lastDigit; // fut shifrat ne vektor, nga pozicioni i funid deri tek
-															// pozicioni i pare i vektorit
+			digits[digits.length - counter] = lastDigit;
 			counter++;
-
-			number /= 10; // heqim nga numri shifren e fundit
-
+			number /= 10;
 		}
 
-		// shkembej shifren 1 me 3 dhe 2 me 4
 		temp = digits[0];
 		digits[0] = digits[2];
 		digits[2] = temp;
@@ -56,13 +49,10 @@ public class MakingADifference {
 		digits[1] = digits[3];
 		digits[3] = temp;
 
-		// konvertoj vektorin me int ne String, me pas ne variabel int
 		char[] chars = new char[digits.length];
 		for (int i = 0; i < digits.length; i++)
 
-			chars[i] = (char) (digits[i] + '0'); // pasi nese do perdorja menyre tjeter per ti bere concatenate numrat
-													// ne string, do humbisnin 0
-
+			chars[i] = (char) (digits[i] + '0');
 		String s = new String(chars);
 		incryptedNumber = Integer.parseInt(s);
 
@@ -72,21 +62,16 @@ public class MakingADifference {
 
 		number = input.nextInt();
 
-		counter = 1; // ndryshohet vlera ne 1 pasi counteri esthe rritur tek kodi siper
+		counter = 1;
 
 		while (number > 0) {
 
-			lastDigit = number % 10; // marr shifren e fundit te numrit
-			lastDigit = lastDigit + 3; // pasi do i shtonim numrit 10, do i hiqnim 7 (10 - 7 = 3)
-			digits1[digits.length - counter] = lastDigit; // fut shifrat ne vektor, nga pozicioni i funid deri tek
-															// pozicioni i pare i vektorit
+			lastDigit = number % 10;
+			lastDigit = lastDigit + 3;
+			digits1[digits.length - counter] = lastDigit;
 			counter++;
-
-			number /= 10; // heq shifren e fundit
-
+			number /= 10;
 		}
-
-		// shkembej shifren 1 me 3 dhe 2 me 4
 
 		temp = digits1[0];
 		digits1[0] = digits1[2];
@@ -98,18 +83,13 @@ public class MakingADifference {
 
 		char[] chars1 = new char[digits.length];
 		for (int i = 0; i < digits1.length; i++)
-
-			chars1[i] = (char) (digits1[i] + '0'); // pasi nese do perdorja menyre tjeter per ti bere concatenate numrat
-													// ne string, do humbisnin 0
+			chars1[i] = (char) (digits1[i] + '0');
 
 		String s1 = new String(chars1);
 		decryptedNumber = Integer.parseInt(s1);
 
 		System.out.printf("The decrypted number is : %d ", decryptedNumber);
 
-		// mbyll Scannerin
 		input.close();
-
 	}
-
 }

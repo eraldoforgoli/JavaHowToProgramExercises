@@ -10,7 +10,6 @@ import java.util.Scanner;
 
 public class SidesOfATriangle {
 	public static void main(String[] args) {
-
 		int a, b, c;
 
 		Scanner input = new Scanner(System.in);
@@ -20,15 +19,12 @@ public class SidesOfATriangle {
 		b = input.nextInt();
 		c = input.nextInt();
 
-		// shuma e cdo dy brinjeve ne nje trekendesh eshte me e madhe se brinja e trete
-
 		if (a + b > c && a + c > b && b + c > a)
 			System.out.println("Yes, these values represent the sides of a triangle");
 
 		else
 			System.out.println("No, these values represent the sides of a triangle");
 
-		input.close(); // mbyll Scannerin
-
+		input.close();
 	}
 }

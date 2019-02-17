@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class DistanceBetweenTwoPoints {
 	public static void main(String[] args) {
-
 		double x1, y1, x2, y2;
 
 		Scanner input = new Scanner(System.in);
@@ -27,11 +26,10 @@ public class DistanceBetweenTwoPoints {
 		System.out.printf("Distance between (%.2f, %.2f) and (%.2f, %.2f) is : %.2f", x1, y1, x2, y2,
 				distance(x1, y1, x2, y2));
 
+		input.close();
 	}
 
 	public static double distance(double x1, double y1, double x2, double y2) {
-
 		return Math.sqrt((Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)));
-
 	}
 }

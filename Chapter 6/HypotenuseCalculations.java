@@ -1,3 +1,4 @@
+
 /*
 
 6.15 (Hypotenuse Calculations) Define a method hypotenuse that calculates the hypotenuse of
@@ -11,23 +12,16 @@ import java.util.Scanner;
 
 public class HypotenuseCalculations {
 	public static void main(String[] args) {
-		
 		double katet1, katet2;
-		
 		Scanner input = new Scanner(System.in);
-		
 		System.out.println("Enter sides :");
 		katet1 = input.nextDouble();
 		katet2 = input.nextDouble();
 		System.out.println("Hypotenuse : " + hypotenuse(katet1, katet2));
-		
-		
-		input.close(); // mbyll Scannerin
-	}
-	
-	public static double hypotenuse(double katet1, double katet2) {
-		return  Math.sqrt( (Math.pow(katet1, 2) + Math.pow(katet2, 2) ));
-		
+		input.close();
 	}
 
+	public static double hypotenuse(double katet1, double katet2) {
+		return Math.sqrt((Math.pow(katet1, 2) + Math.pow(katet2, 2)));
+	}
 }

@@ -22,7 +22,6 @@ that each line begin with an appropriate number of blank spaces.]
 */
 public class TrianglePrintingProgram {
 	public static void main(String[] args) {
-
 		int n = 10;
 
 		for (int i = 1; i <= 10; i++) {
@@ -42,7 +41,6 @@ public class TrianglePrintingProgram {
 				System.out.print("*");
 
 			System.out.println();
-
 		}
 
 		System.out.println();
@@ -63,7 +61,5 @@ public class TrianglePrintingProgram {
 				System.out.print('*');
 			System.out.println();
 		}
-
 	}
-
 }

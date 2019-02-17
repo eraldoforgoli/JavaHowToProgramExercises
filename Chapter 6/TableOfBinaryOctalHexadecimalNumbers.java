@@ -7,19 +7,14 @@ through 256. If you aren’t familiar with these number systems, read online Appen
 */
 public class TableOfBinaryOctalHexadecimalNumbers {
 	public static void main(String[] args) {
-
 		int decimal;
 		String binary, octal, hexadecimal;
-
 		System.out.println("Decimal  | Binary | Octal | Hexadecimal ");
 
 		for (int i = 1; i <= 256; i++) {
-
 			decimal = i;
 			binary = octal = hexadecimal = "";
 			int tmp;
-
-			// konvertoj ne number binar
 			while (decimal >= 2) {
 				tmp = decimal % 2;
 				binary += tmp;
@@ -29,7 +24,6 @@ public class TableOfBinaryOctalHexadecimalNumbers {
 			binary = decimal + binary;
 			decimal = i;
 
-			// konvertim oktal
 			while (decimal >= 2) {
 				tmp = decimal % 2;
 				octal += tmp;
@@ -38,8 +32,6 @@ public class TableOfBinaryOctalHexadecimalNumbers {
 
 			octal += decimal;
 			decimal = i;
-
-			// konvertim hekzadecimal
 
 			while (decimal >= 16) {
 				tmp = decimal % 16;
@@ -68,15 +60,9 @@ public class TableOfBinaryOctalHexadecimalNumbers {
 					break;
 
 				}
-				decimal /= 16;
-
 			}
 			hexadecimal += decimal;
-
 			System.out.println(i + "         " + binary + "        " + octal + "         " + hexadecimal);
-
 		}
-
 	}
-
 }

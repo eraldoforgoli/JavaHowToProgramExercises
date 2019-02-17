@@ -15,11 +15,8 @@ import java.util.Scanner;
 
 public class PrimeNumbers {
 	public static void main(String[] args) {
-
 		int number;
-
 		Scanner input = new Scanner(System.in);
-
 		System.out.println("Enter number");
 		number = input.nextInt();
 
@@ -29,18 +26,14 @@ public class PrimeNumbers {
 		for (int i = 2; i <= 10000; i++) {
 			if (isPrime(i)) {
 				System.out.printf(i + " is Prime ! %n");
-
 			}
 		}
 	}
 
 	public static boolean isPrime(int number) {
-
 		for (int i = 2; i <= number / 2; i++)
 			if (number % i == 0)
 				return false;
-
 		return true;
-
 	}
 }

@@ -9,9 +9,7 @@ import java.util.Scanner;
 
 public class SmallestValue {
 	public static void main(String[] args) {
-		
 		int nr, value, min;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter the number of values");
@@ -20,13 +18,11 @@ public class SmallestValue {
 		min = input.nextInt();
 
 		for (int i = 0; i < nr - 1; i++) {
-
 			value = input.nextInt();
 			if (value < min)
 				min = value;
 		}
-
 		System.out.println("Minimum is : " + min);
+		input.close();
 	}
-
 }

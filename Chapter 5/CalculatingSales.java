@@ -17,7 +17,6 @@ import java.util.Scanner;
 
 public class CalculatingSales {
 	public static void main(String[] args) {
-
 		int productNumber, quantity, close = 0;
 		double retailProduct1 = 0.0, retailProduct2 = 0.0, retailProduct3 = 0.0, retailProduct4 = 0.0,
 				retailProduct5 = 0.0;
@@ -25,7 +24,6 @@ public class CalculatingSales {
 		System.out.println("Enter -1 to stop buying ");
 
 		while (close != -1) {
-
 			System.out.println("Enter product number : ");
 			productNumber = input.nextInt();
 
@@ -54,18 +52,13 @@ public class CalculatingSales {
 				break;
 
 			}
-
 			System.out.println("Enter -1 to stop buying or any other button to continue  ");
 			close = input.nextInt();
-
 		}
-
 		System.out.printf("Retail value  for product 1 : %.2f", retailProduct1);
 		System.out.printf("Retail value  for product 2 : %.2f", retailProduct2);
 		System.out.printf("Retail value  for product 3 : %.2f", retailProduct3);
 		System.out.printf("Retail value  for product 4 : %.2f", retailProduct4);
 		System.out.printf("Retail value  for product 5 : %.2f", retailProduct5);
-
 	}
-
 }

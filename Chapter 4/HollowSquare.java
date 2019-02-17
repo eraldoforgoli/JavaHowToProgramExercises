@@ -9,26 +9,21 @@ import java.util.Scanner;
 
 public class HollowSquare {
 	public static void main(String[] args) {
-
 		int size;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter number of rows: ");
 
 		size = input.nextInt();
-
-		for (int i = 1; i <= size; i++) { // per cdo rrjesht  bej:
+		for (int i = 1; i <= size; i++) {
 			for (int j = 1; j < size; j++) {
-				if (i == 1 || i == size || j == 1 || j == size) // ne keto pozicione jane vendosur yjet, cdo pozicion tjeter perfaqesohet nga hapesire
+				if (i == 1 || i == size || j == 1 || j == size)
 					System.out.print("*");
 
 				else
 					System.out.print(" ");
 			}
 			System.out.println();
-
 		}
-
 	}
 }

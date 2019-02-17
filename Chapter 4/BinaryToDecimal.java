@@ -14,7 +14,6 @@ import java.util.Scanner;
 
 public class BinaryToDecimal {
 	public static void main(String[] args) {
-
 		int binary, digit;
 		int number = 0;
 		int counter = 1;
@@ -24,16 +23,14 @@ public class BinaryToDecimal {
 		System.out.println("Enter the binary number");
 		binary = input.nextInt();
 
-		while (binary > 0) { // marim shifren e fundit te number per cdo ciklim, deri sa te kemi arritur tek
-								// shifra e pare
-			digit = binary % 10; // shifra e fundit
+		while (binary > 0) {
+			digit = binary % 10;
 			number += counter * digit;
-			counter *= 2; // rritet counteri me 2 per cdo ciklim (1, 2, 4 ...)
-			binary /= 10; // numri binar pa shifren e fundit aktuale
+			counter *= 2;
+			binary /= 10;
 		}
 
 		System.out.println("To decimal " + " = " + number);
-
-		input.close(); // mbyll Scannerin
+		input.close();
 	}
 }

@@ -16,27 +16,22 @@ import java.util.Scanner;
 
 public class DisplayingASquareOfAsterics {
 	public static void main(String[] args) {
-
 		int numberOfRows;
-
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the number of rows: ");
 		numberOfRows = input.nextInt();
-
 		squareOfAstrics(numberOfRows);
 
-		input.close(); // mbyll Scannerin
+		input.close();
 	}
 
 	public static void squareOfAstrics(int nr) {
 
-		for (int i = 0; i < nr; i++) { // per cdo rrjesht bej: 
+		for (int i = 0; i < nr; i++) {
 			for (int j = 0; j < nr; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-
 	}
-
 }

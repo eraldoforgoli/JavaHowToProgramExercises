@@ -14,14 +14,12 @@ import java.util.Scanner;
 
 public class SalaryCalculator {
 	public static void main(String[] args) {
-
 		int hoursWorked;
 		double hourlyRate, grossPay;
 
 		Scanner input = new Scanner(System.in);
 
 		for (int i = 1; i <= 3; i++) {
-
 			System.out.println("Enter the hours worked by employee  " + i);
 			hoursWorked = input.nextInt();
 
@@ -35,11 +33,7 @@ public class SalaryCalculator {
 				grossPay = 40 * hourlyRate;
 
 			System.out.printf("Gross pay for employee %d is : %.2f%n ", i, grossPay);
-
 		}
-		
 		input.close();
-
 	}
-
 }

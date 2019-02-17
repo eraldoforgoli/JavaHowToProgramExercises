@@ -127,11 +127,10 @@ A partridge in a pear tree
 
 public class TwelveDayOfChristmasSong {
 	public static void main(String[] args) {
-
 		String day = "";
 
 		for (int i = 1; i <= 12; i++) {
-			switch (i) { // percaktojme diten
+			switch (i) {
 			case 1:
 				day = "first";
 				break;
@@ -174,7 +173,6 @@ public class TwelveDayOfChristmasSong {
 
 			}
 
-			// printojme fjaline e pare te cdo vargu, pasi ndryshon vetem dita
 			System.out.println("On the " + day + " day of christmas my true love sent to me");
 
 			/*
@@ -225,13 +223,10 @@ public class TwelveDayOfChristmasSong {
 					break;
 				default:
 					System.out.println("Twelve drummers drumming");
-					break;
-
+					break;s
 				}
 			}
-
 			System.out.println();
-
 		}
 	}
 }

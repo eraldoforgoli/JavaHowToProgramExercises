@@ -11,10 +11,9 @@ number of output statements.
 
 public class DiamondPrintingProgram {
 	public static void main(String[] args) {
-
 		int m = 10;
 
-		// gjysma siper 
+		// upper half
 		for (int i = 1; i <= m; i++) {
 			for (int j = 1; j <= m - i; j++)
 				System.out.print(" ");
@@ -23,8 +22,8 @@ public class DiamondPrintingProgram {
 				System.out.print("*");
 			System.out.println();
 		}
-		
-		//gjysma poshte
+
+		// lower half
 		for (int i = 1; i <= m; i++) {
 			for (int j = 1; j <= i; j++)
 				System.out.print(" ");
@@ -32,8 +31,6 @@ public class DiamondPrintingProgram {
 			for (int j = 1; j <= 2 * m - 2 * i - 1; j++)
 				System.out.print("*");
 			System.out.println();
-
 		}
-
 	}
 }

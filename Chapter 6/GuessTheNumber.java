@@ -19,29 +19,23 @@ import java.util.Scanner;
 
 public class GuessTheNumber {
 	public static void main(String[] args) {
-
 		int number, guess;
 		int playAgain;
 		Scanner input = new Scanner(System.in);
 
 		SecureRandom random = new SecureRandom();
 
-		// i jap vlere random numrit qe useri duhet te gjeje
 		number = 1 + random.nextInt(1000);
 
 		System.out.println("Enter your  guess : ");
 		guess = input.nextInt();
 
-		// nese e gjen me input te pare
 		if (guess == number) {
 			System.out.println("Congratulations");
 			System.out.println("Press 1 if you want to play again, or any other number to exit");
 			playAgain = input.nextInt();
 			if (playAgain == 1)
 				number = -999;
-			; // i japim nje vlere te ndryshme nga cdo numer nga 1 deri 1000, qe cikli while
-				// te ekzekutohet
-			// nese fut numer tjeter, cikli nuk do te ekzekutohet, pasi ghuess == numer
 		}
 
 		while (number != guess) {
@@ -53,8 +47,7 @@ public class GuessTheNumber {
 			System.out.println("Enter your next guess : ");
 			guess = input.nextInt();
 
-			if (guess == number) { // nese e gjen numrin, pyesim nese do luaj perseri , nese po
-									// ndeyshojme numrin qe duhet te gjeje dhe pyesim per guessin
+			if (guess == number) {
 			}
 			System.out.println("Congratulations");
 			System.out.println("Press 1 if you want to play again, or any other number to exit");
@@ -66,8 +59,7 @@ public class GuessTheNumber {
 
 			} else
 				break;
-
 		}
+		input.close();
 	}
-
 }

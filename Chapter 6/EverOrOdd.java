@@ -12,7 +12,6 @@ of integers (one at a time) and determines whether each is even or odd.
 
 public class EverOrOdd {
 	public static void main(String[] args) {
-
 		int n1;
 		Scanner input = new Scanner(System.in);
 
@@ -21,16 +20,14 @@ public class EverOrOdd {
 		for (int i = 0; i < 10; i++) {
 			n1 = input.nextInt();
 			System.out.printf("Is %s Even%n", isEven(n1) ? "" : "not");
-
 		}
 
-		input.close(); // mbyll Scannerin
+		input.close();
 	}
 
 	private static boolean isEven(int n1) {
 		if (n1 % 2 == 0)
 			return true;
-
 		return false;
 	}
 }

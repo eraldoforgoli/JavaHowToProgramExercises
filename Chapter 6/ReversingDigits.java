@@ -11,14 +11,10 @@ import java.util.Scanner;
 
 public class ReversingDigits {
 	public static void main(String[] args) {
-
 		int number;
-
 		Scanner input = new Scanner(System.in);
-
 		System.out.print("Enter the number: ");
 		number = input.nextInt();
-
 		System.out.print(reverse(number));
 
 		input.close();
@@ -28,18 +24,11 @@ public class ReversingDigits {
 	public static int reverse(int number) {
 		String s = "";
 		int n1;
-
 		while (number >= 1) {
-			n1 = number % 10; // mar shifren e fundit te numrit
-
-			// i bashkoj stringut numrin e fundit
+			n1 = number % 10;
 			s += n1;
-
-			number /= 10; // heq shifren e fundit
-
+			number /= 10;
 		}
-
 		return Integer.parseInt(s);
 	}
-
 }

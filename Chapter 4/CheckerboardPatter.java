@@ -23,23 +23,20 @@ import java.util.Scanner;
 
 public class CheckerboardPatter {
 	public static void main(String[] args) {
-
 		int nr;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter the number of rows :");
 		nr = input.nextInt();
 
-		for (int i = 0; i < nr; i++) { // per cdo rrjesht
-			if (i % 2 == 1) // rrjeshtat tek nisin me hapesire
+		for (int i = 0; i < nr; i++) {
+			if (i % 2 == 1)
 				System.out.print(" ");
 			for (int j = 0; j < nr; j++) {
 				System.out.print("* ");
-
 			}
 			System.out.println();
 		}
-		input.close(); // mbyll Scannerin
+		input.close();
 	}
 }

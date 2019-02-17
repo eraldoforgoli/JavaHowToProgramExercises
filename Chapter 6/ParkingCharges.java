@@ -17,11 +17,8 @@ import java.util.Scanner;
 
 public class ParkingCharges {
 	public static void main(String[] args) {
-
 		int numberOfCustomers, hoursParked;
-		double charge, totalCharge = 0.0;
-		;
-
+		double totalCharge = 0.0;
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter the number of customers:");
@@ -30,21 +27,17 @@ public class ParkingCharges {
 		for (int i = 0; i < numberOfCustomers; i++) {
 			System.out.println("Enter the hours parked for customer : " + (i + 1));
 			hoursParked = input.nextInt();
-			
 			System.out.println("Customer 1 is charged : " + calculateCharges(hoursParked) + "$");
 			totalCharge += calculateCharges(hoursParked);
-			
 		}
-		
 		System.out.println("Total charge : " + totalCharge);
-
+		input.close();
 	}
 
 	public static double calculateCharges(int hours) {
-		if (hours > 3.0) 
+		if (hours > 3.0)
 			return 3.0 * 2.00 + ((double) hours - 3.0) * 0.50;
-	    else
+		else
 			return (double) hours * 2.0;
-
 	}
 }

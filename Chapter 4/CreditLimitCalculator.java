@@ -20,9 +20,7 @@ import java.util.Scanner;
 
 public class CreditLimitCalculator {
 	public static void main(String[] args) {
-
 		int accountNumber, itemsCharged, numberOfCustomers, initialBalance, creditsApplied, allowedCredit, newBalance;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter the number of customers : ");
@@ -51,9 +49,7 @@ public class CreditLimitCalculator {
 
 			if (newBalance > allowedCredit)
 				System.out.println("Credit limit exceeded");
-
 		}
-
-		input.close(); // mbyll Scannerin
+		input.close();
 	}
 }

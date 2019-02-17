@@ -17,29 +17,23 @@ public class CoinTossing {
 	public static final SecureRandom random = new SecureRandom();
 
 	public static void main(String[] args) {
-
 		int end = 0;
-
 		Coin coin;
 		int countHeads = 0, countTails = 0;
-
 		Scanner input = new Scanner(System.in);
 
 		while (end != 1) {
-
 			if (flip() == Coin.HEADS) {
 				countHeads++;
 				System.out.println("HEAD");
 			} else {
 				countTails++;
 				System.out.println("TAIL");
-
 			}
 			System.out.println("press  1 to end tossing  or any other button to continue ");
 			end = input.nextInt();
 
 		}
-
 		System.out.println("Heads : " + countHeads + "\n Tails : " + countTails);
 
 		input.close();

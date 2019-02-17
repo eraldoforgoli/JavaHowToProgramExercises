@@ -9,15 +9,12 @@ import java.util.Scanner;
 
 public class ValidatingUserInput {
 	public static void main(String[] args) {
-
 		Scanner input = new Scanner(System.in);
-
 		int passes = 0;
 		int failures = 0;
 		int studentCounter = 1;
 
 		while (studentCounter <= 10) {
-
 			System.out.print("Enter result(1 = pass, 2 = fail) : ");
 			int result = input.nextInt();
 
@@ -35,9 +32,7 @@ public class ValidatingUserInput {
 				System.out.print("Wrong input");
 				// nuk rritet studentCounter kur nuk futet 1 ose 2
 			}
-
 		}
-
 		input.close(); // mbyll Scannerin
 	}
 }

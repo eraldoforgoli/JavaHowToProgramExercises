@@ -16,22 +16,17 @@ import java.util.Scanner;
 
 public class LargestNumber {
 	public static void main(String[] args) {
-
 		int nr, max;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter 10 numbers");
-
 		max = input.nextInt(); // supozojme se numri i pare eshte maksimali
 
 		for (int i = 0; i < 9; i++) {
-
 			nr = input.nextInt(); // marim si imput numrin e rradhes
 			if (nr > max)
 				max = nr;
 		}
-
 		System.out.println("Largest number : " + max);
 	}
 }

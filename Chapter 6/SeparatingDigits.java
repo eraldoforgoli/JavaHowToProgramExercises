@@ -19,16 +19,13 @@ import java.util.Scanner;
 
 public class SeparatingDigits {
 	public static void main(String[] args) {
-
 		int a;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter the integer : ");
 		a = input.nextInt();
 		if (a >= 1 && a <= 99999)
 			displayDigits(a);
-
 		else
 			System.out.print("Number should be 1 - 9999");
 
@@ -36,27 +33,17 @@ public class SeparatingDigits {
 	}
 
 	public static void displayDigits(int a) {
-		// gjej pjestuesin me te madh te numrit
 		int divisor = 1;
 		int digit;
 
 		for (int i = 1; i < a; i *= 10)
 			divisor = i;
-
-		// ndaj shifrat, nga e para deri tek e fundit
 		while (divisor >= 1) {
-
-			// mar shifrat me rradhe, nga e para deri tek e fundit
 			digit = integerPart(a, divisor);
-			// printoj shifren
 			System.out.print(digit + " ");
-			// heq shifren e printuar
 			a = integerRemainder(a, divisor);
-			// pjestoj me 10 pjestuesin me te madh
 			divisor = integerPart(divisor, 10);
-
 		}
-
 	}
 
 	public static int integerPart(int a, int b) {
@@ -65,7 +52,5 @@ public class SeparatingDigits {
 
 	public static int integerRemainder(int a, int b) {
 		return (int) a % b;
-
 	}
-
 }

@@ -16,32 +16,26 @@ import java.util.Scanner;
 
 public class DisplayingASquareOfAnyCaracter {
 	public static void main(String[] args) {
-
 		int numberOfRows;
 		char printChar;
 
 		Scanner input = new Scanner(System.in);
-
 		System.out.println("Enter the number of rows: ");
 		numberOfRows = input.nextInt();
 
 		System.out.println("Enter the character to be printed");
 		printChar = input.next().charAt(0);
-		
-		
 		squareOfAstrics(numberOfRows, printChar);
 
-		input.close(); // mbyll Scannerin
+		input.close();
 	}
 
 	public static void squareOfAstrics(int nr, char c) {
-
-		for (int i = 0; i < nr; i++) { // per cdo rrjesht bej:
+		for (int i = 0; i < nr; i++) {
 			for (int j = 0; j < nr; j++) {
 				System.out.print(c);
 			}
 			System.out.println();
 		}
-
 	}
 }

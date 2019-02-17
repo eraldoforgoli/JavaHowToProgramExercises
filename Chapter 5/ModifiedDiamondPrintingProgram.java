@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class ModifiedDiamondPrintingProgram {
 	public static void main(String[] args) {
-
 		int rrjesht;
 
 		Scanner input = new Scanner(System.in);
@@ -20,28 +19,25 @@ public class ModifiedDiamondPrintingProgram {
 		System.out.println("Enter the number of rows :");
 		rrjesht = input.nextInt();
 
-		for (int i = 1; i <= rrjesht; i++) { // per cdo rrjesht bej:
-			for (int j = 1; j <= rrjesht - i; j++) // per cdo dikel i, bej: 
+		for (int i = 1; i <= rrjesht; i++) {
+			for (int j = 1; j <= rrjesht - i; j++)
 				System.out.print(" ");
 
-			for (int j = 1; j <= 2 * i - 1; j++) // per cdo dikel i, bej: 
+			for (int j = 1; j <= 2 * i - 1; j++)
 				System.out.print("*");
 
-			System.out.println(); // kalo ne rrjesht te ri
+			System.out.println();
 		}
 
-		//pjesa siper 
-		for (int i = 1; i <= rrjesht; i++) { // per cdo rrjesht bej:
-			for (int j = 1; j <= i; j++) // per cdo dikel i, bej: 
+		// upper half
+		for (int i = 1; i <= rrjesht; i++) {
+			for (int j = 1; j <= i; j++)
 				System.out.print(" ");
 
 			for (int j = 1; j <= 2 * rrjesht - 2 * i - 1; j++)
 				System.out.print("*");
 
-			System.out.println(); // kalo ne rrjesht te ri
-
+			System.out.println();
 		}
-
 	}
-
 }
