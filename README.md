@@ -10,3 +10,5 @@ Chapter 5 : Control Statements: Part 2;
 Logical Operators
 
 Chapter 6: Methods: A Deeper Look
+
+Each chapter is located in a folder in source code. Each exercise is located in its .java file, including the main file.
