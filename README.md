@@ -12,3 +12,6 @@ Logical Operators
 Chapter 6: Methods: A Deeper Look
 
 Each chapter is located in a folder in source code. Each exercise is located in its .java file, including the main file.
+
+## Book link
+https://www.pearson.com/us/higher-education/product/Deitel-Java-How-To-Program-Early-Objects-10th-Edition/9780133807806.html
